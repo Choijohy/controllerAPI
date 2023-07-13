@@ -17,7 +17,7 @@ class TypeUpdate(BaseModel):
 
 # type schema : read
 class Type(TypeBase):
-    typeId = int
+    typeId : int
     class Config:
             orm_mode = True
 
@@ -29,7 +29,7 @@ class CorpusBase(BaseModel):
     # string or none 
     source_detail : Union[str,None] = None
 
-# corpus schema : creation
+# corpus schema : create
 class CorpusCreate(CorpusBase):
     pass
 
@@ -42,7 +42,30 @@ class Corpus(CorpusBase):
 
 # corpus schema : update
 class CorpusUpdate(BaseModel):
-    typeId : Union[int, None] = None
     content : Union[str, None] = None
     source : Union[str, None] = None
     source_detail : Union[str , None] = None
+
+# user base
+class UserBase(BaseModel):
+    email : str
+
+# user schema : create
+class UserCreate(UserBase):
+    password : str
+
+# user schema : read
+class User(UserBase):
+    userId : int
+    class Config:
+        orm_mode = True
+
+# user schema : update
+class UserUpdate(UserBase):
+    email : Union[str, None] = None
+    password : Union[str, None] = None
+
+# token schema : read
+class TokenResponse(BaseModel):
+    access_token : str
+    token_type : str

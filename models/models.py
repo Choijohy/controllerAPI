@@ -6,7 +6,6 @@ from database.connection import Base
 #[META DATA] - async SQL Databases
 
 
-
 #[DECLARATIVE MAPPING]
 #Declarative Mapping + annotation
 class Type(Base):
@@ -34,3 +33,9 @@ class Corpus(Base):
 
     
 
+class User(Base):
+    __tablename__ = "Users"
+
+    userId: Mapped[int] = mapped_column(Integer, primary_key=True)
+    email : Mapped[str] = mapped_column(String(255), nullable=False, unique=True)
+    password : Mapped[str] = mapped_column(String(255), nullable=False)

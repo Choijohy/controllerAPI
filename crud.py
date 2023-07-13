@@ -1,8 +1,10 @@
-from fastapi import HTTPException
+from fastapi import HTTPException, status
 from database.connection import engine
 from models import models, schemas
 from sqlalchemy import text
 from sqlalchemy.orm import Session
+from auth.hash_password import HashPassword
+from auth.jwt_handler import create_access_token
 
 # ITEM CRUD
 
@@ -68,9 +70,9 @@ def del_item(db:Session, corpusId:int):
 
 # TYPE CRUD
 
-# get all types
+# get items of each type
 def get_all_types(db:Session):
-    stmt = "SELECT Cor.content, Cor.typeId, Cor.source, Cor.source_detail , Type.type FROM corpuses as Cor INNER JOIN CorpusTypes as Type ON Cor.typeId = Type.typeId  ;"
+    stmt = "SELECT * FROM CorpusTypes"
     result = db.execute(text(stmt)).fetchall()
     return result
 
@@ -120,6 +122,52 @@ def get_type_items(db:Session, typeId:int):
     result = db.execute(text(stmt),{"typeId":typeId}).fetchall()
     return result
 
-    
 
+# USER CRUD
+
+hash_password = HashPassword()
+
+# create new user
+def create_user(db:Session,User:schemas.UserCreate):
+    hashed_password = hash_password.create_hash(User.password)
+    db_user = models.User (
+        email = User.email,
+        password = hashed_password
+    ) 
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
     
+    return db_user
+    
+# get all items
+def get_all_users(db:Session):
+    stmt = "SELECT userId, email FROM Users"
+    result = db.execute(text(stmt)).fetchall()
+    return result
+
+def get_user(email, db:Session):
+    stmt = "SELECT email, password FROM Users WHERE Users.email=:email"
+    return db.execute(text(stmt),{"email":email}).fetchall() #list - [()]
+
+def sign_user_in(User,db:Session):
+    exist_user = get_user(User.username,db)
+    if len(exist_user) == 1:
+        user_email = exist_user[0][0]
+        user_pwd = exist_user[0][1]
+        if hash_password.verify_hash(User.password,user_pwd):
+            access_token = create_access_token(user_email)
+            return{
+                "access_token" : access_token,
+                "token_type":"Bearer"
+            }
+        else:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid details passed"
+            )
+    else:
+        raise HTTPException(
+            status_code = status.HTTP_400_BAD_REQUEST,
+            detail = "No user with supplied email"
+        )
