@@ -29,7 +29,7 @@ async def read_type(typeId:int,db:Session=Depends(get_db)):
     return result
 
 @type_router.post("/new")
-async def insert_type(Type: schemas.TypeCreate, db : Session=Depends(get_db), user:str = Depends(authenticate)):
+async def insert_type(Type: schemas.TypeCreate, db : Session=Depends(get_db)):
     result = crud.insert_type(db,Type)
     return result
 

@@ -1,5 +1,4 @@
 from fastapi import HTTPException, status
-from database.connection import engine
 from models import models, schemas
 from sqlalchemy import text
 from sqlalchemy.orm import Session
@@ -171,3 +170,7 @@ def sign_user_in(User,db:Session):
             status_code = status.HTTP_400_BAD_REQUEST,
             detail = "No user with supplied email"
         )
+
+
+
+
