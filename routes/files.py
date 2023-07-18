@@ -1,4 +1,5 @@
 # fastAPI의 UploadFile, FileResponse 객체 활용
+# DB아닌 저장경로를 통해, 파일 저장 및 불러오기
 
 from fastapi import APIRouter,  UploadFile, Query
 from typing_extensions import Annotated
