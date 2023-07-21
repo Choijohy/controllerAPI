@@ -1,10 +1,9 @@
 {
     "logger" : {
         "path":"/Users/jiheechoi/Desktop/FastAPI_SQL/planner/log/access.log",
-        "filename":"access.log",
         "level":"debug",
-        "rotation":"10 days",
-        "retention":"1 months",
+        "rotation":"15:00", 
+        "retention":"10 days",
         "format" : "<level>{level: <8}</level> <green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> request id: {extra[request_id]} - <cyan>{name}</cyan>:<cyan>{function}</cyan> - <level>{message}</level>"
 
     }

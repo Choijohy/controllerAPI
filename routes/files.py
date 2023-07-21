@@ -15,11 +15,13 @@ async def create_upload_file(file: Union[UploadFile,None]=None):
     if not file:
         return {"message": "No upload file sent"}
     else:
-        # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        # 업로드 url 적절하게 수정
         UPLOAD_DIR = '/Users/jiheechoi/Desktop/FastAPI_SQL/planner/files'
         content = await file.read()
         file_location = os.path.join(UPLOAD_DIR,file.filename)
-        with open(file_location, "wb+") as file_object:
+        # w - 쓰기모드, b - 바이너리 모드(비트단위 데이터 기록) 
+        # b 모드가 없으면 이미지 파일은 TypeError
+        with open(file_location, "w") as file_object:
             file_object.write(content)
 
         return {

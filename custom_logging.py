@@ -23,7 +23,6 @@ class  InterceptHandler(logging.Handler):
         while frame.f_code.co_filename == logging.__file__:
             frame = frame.f_back
             depth += 1
-
         log = logger.bind(request_id='app')
         log.opt(
             depth=depth,
@@ -33,10 +32,13 @@ class  InterceptHandler(logging.Handler):
 class CustomizeLogger:
 
     @classmethod
+    # config 파일에 맞게, logger 생성
     def make_logger(cls, config_path:Path):
+        #JSON config 파일 읽어오기
         config = cls.load_logging_config(config_path)
         logging_config = config.get('logger')
 
+        #config 파일에서 설정한 파라미터 읽어오기
         logger = cls.customize_logging(
             logging_config.get('path'),
             level=logging_config.get('level'),
@@ -55,13 +57,16 @@ class CustomizeLogger:
         format:str
     ):
         logger.remove()
-        logger.add(
-            sys.stdout,
-            enqueue=True,
-            backtrace=True,
-            level=level.upper(),
-            format=format
-        )
+        # console 출력
+        # logger.add(
+        #     sys.stdout,
+        #     enqueue=True,
+        #     backtrace=True,
+        #     level=level.upper(),
+        #     format=format
+        # )
+
+        # 일반 log - access.log 파일
         logger.add(
             str(filepath),
             rotation=rotation,
@@ -71,8 +76,21 @@ class CustomizeLogger:
             level=level.upper(),
             format=format
         )
+        # error log - error.log 파일
+        logger.add(
+            str('/Users/jiheechoi/Desktop/FastAPI_SQL/planner/log/error.log'),
+            rotation=rotation,
+            retention=retention,
+            enqueue=True,
+            backtrace=True,
+            level='ERROR',
+            format=format
+        )
+        # python logging system에 InterceptHandler 추가 
         logging.basicConfig(handlers=[InterceptHandler()],level=0)
+        # uvicorn logger에 InterceptHandler 추가
         logging.getLogger("uvicorn.access").handlers = [InterceptHandler()]
+        # InterceptHandler 추가
         for _log in ['uvicorn',
                      'uvicorn.error',
                      'fastapi'

@@ -64,3 +64,589 @@ INFO     2023-07-21 09:56:13.949 request id: app - uvicorn.lifespan.on:shutdown 
 INFO     2023-07-21 09:56:13.950 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
 INFO     2023-07-21 09:56:13.950 request id: app - uvicorn.server:serve - Finished server process [64812]
 INFO     2023-07-21 09:56:13.950 request id: app - uvicorn.server:serve - Finished server process [64812]
+DEBUG    2023-07-21 11:07:57.972 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 11:07:58.002 request id: app - uvicorn.server:serve - Started server process [71080]
+INFO     2023-07-21 11:07:58.002 request id: app - uvicorn.server:serve - Started server process [71080]
+INFO     2023-07-21 11:07:58.003 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:07:58.003 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:07:58.004 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:07:58.004 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:09:55.372 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:59164 - "GET /docs HTTP/1.1" 200
+INFO     2023-07-21 11:09:55.572 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:59164 - "GET /openapi.json HTTP/1.1" 200
+DEBUG    2023-07-21 11:11:09.199 request id: app - multipart.multipart:callback - Calling on_part_begin with no data
+DEBUG    2023-07-21 11:11:09.200 request id: app - multipart.multipart:callback - Calling on_header_field with data[42:61]
+DEBUG    2023-07-21 11:11:09.200 request id: app - multipart.multipart:callback - Calling on_header_value with data[63:114]
+DEBUG    2023-07-21 11:11:09.201 request id: app - multipart.multipart:callback - Calling on_header_end with no data
+DEBUG    2023-07-21 11:11:09.201 request id: app - multipart.multipart:callback - Calling on_header_field with data[116:128]
+DEBUG    2023-07-21 11:11:09.201 request id: app - multipart.multipart:callback - Calling on_header_value with data[130:140]
+DEBUG    2023-07-21 11:11:09.201 request id: app - multipart.multipart:callback - Calling on_header_end with no data
+DEBUG    2023-07-21 11:11:09.204 request id: app - multipart.multipart:callback - Calling on_headers_finished with no data
+DEBUG    2023-07-21 11:11:09.204 request id: app - multipart.multipart:callback - Calling on_part_data with data[144:238]
+DEBUG    2023-07-21 11:11:09.204 request id: app - multipart.multipart:callback - Calling on_part_data with data[0:1]
+DEBUG    2023-07-21 11:11:09.205 request id: app - multipart.multipart:callback - Calling on_part_data with data[239:10373]
+DEBUG    2023-07-21 11:11:09.205 request id: app - multipart.multipart:callback - Calling on_part_end with no data
+DEBUG    2023-07-21 11:11:09.205 request id: app - multipart.multipart:callback - Calling on_end with no data
+INFO     2023-07-21 11:11:09.206 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:59184 - "POST /file/image HTTP/1.1" 200
+INFO     2023-07-21 11:11:27.158 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:11:27.158 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:11:27.259 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:11:27.259 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:11:27.260 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:11:27.260 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:11:27.260 request id: app - uvicorn.server:serve - Finished server process [71080]
+INFO     2023-07-21 11:11:27.260 request id: app - uvicorn.server:serve - Finished server process [71080]
+DEBUG    2023-07-21 11:11:27.756 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 11:11:27.780 request id: app - uvicorn.server:serve - Started server process [71416]
+INFO     2023-07-21 11:11:27.780 request id: app - uvicorn.server:serve - Started server process [71416]
+INFO     2023-07-21 11:11:27.780 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:11:27.780 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:11:27.781 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:11:27.781 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+DEBUG    2023-07-21 11:11:34.366 request id: app - multipart.multipart:callback - Calling on_part_begin with no data
+DEBUG    2023-07-21 11:11:34.366 request id: app - multipart.multipart:callback - Calling on_header_field with data[42:61]
+DEBUG    2023-07-21 11:11:34.367 request id: app - multipart.multipart:callback - Calling on_header_value with data[63:114]
+DEBUG    2023-07-21 11:11:34.367 request id: app - multipart.multipart:callback - Calling on_header_end with no data
+DEBUG    2023-07-21 11:11:34.367 request id: app - multipart.multipart:callback - Calling on_header_field with data[116:128]
+DEBUG    2023-07-21 11:11:34.367 request id: app - multipart.multipart:callback - Calling on_header_value with data[130:140]
+DEBUG    2023-07-21 11:11:34.367 request id: app - multipart.multipart:callback - Calling on_header_end with no data
+DEBUG    2023-07-21 11:11:34.367 request id: app - multipart.multipart:callback - Calling on_headers_finished with no data
+DEBUG    2023-07-21 11:11:34.367 request id: app - multipart.multipart:callback - Calling on_part_data with data[144:238]
+DEBUG    2023-07-21 11:11:34.367 request id: app - multipart.multipart:callback - Calling on_part_data with data[0:1]
+DEBUG    2023-07-21 11:11:34.368 request id: app - multipart.multipart:callback - Calling on_part_data with data[239:7375]
+DEBUG    2023-07-21 11:11:34.368 request id: app - multipart.multipart:callback - Calling on_part_data with data[0:1]
+DEBUG    2023-07-21 11:11:34.368 request id: app - multipart.multipart:callback - Calling on_part_data with data[7376:10373]
+DEBUG    2023-07-21 11:11:34.368 request id: app - multipart.multipart:callback - Calling on_part_end with no data
+DEBUG    2023-07-21 11:11:34.368 request id: app - multipart.multipart:callback - Calling on_end with no data
+INFO     2023-07-21 11:11:34.370 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:59191 - "POST /file/image HTTP/1.1" 500
+ERROR    2023-07-21 11:11:34.370 request id: app - uvicorn.protocols.http.h11_impl:run_asgi - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 29
+               └ <function _main at 0x100673ee0>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x100475790>
+           └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x100472dc0>
+    └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x100691670>, 'target': <bound method Server.run of <uvicorn.server.Server object...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+    │    └ <function subprocess_started at 0x101bfb700>
+    └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=26, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x1006916a0>>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=26, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x101bf4c10>
+           │       │   └ <uvicorn.server.Server object at 0x1006916a0>
+           │       └ <function run at 0x1006a78b0>
+           └ <module 'asyncio' from '/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/pyth...
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x10421ebc0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x100c3e9d0>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x100c3e940>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x100c424c0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x100bda160>
+    └ <Handle <TaskStepMethWrapper object at 0x104431c10>()>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x104431c10>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x104431c10>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x104431c10>()>
+> File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x101bda220>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x1043ebc10>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x101bda220>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/applications.py", line 282, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x104420cd0>
+          └ <fastapi.applications.FastAPI object at 0x1043ebc10>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x104411790>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x104420ca0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x104420cd0>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x104411820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x104420c40>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x104420ca0>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x104411820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x1043ebb50>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x104420c40>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x104411820>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x101a2fca0>
+          └ APIRoute(path='/file/image', name='create_upload_file', methods=['POST'])
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x104411820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x1044115e0>
+          └ APIRoute(path='/file/image', name='create_upload_file', methods=['POST'])
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x104431310>
+                     └ <function get_request_handler.<locals>.app at 0x104411550>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x101a17940>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/routing.py", line 167, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'file': <starlette.datastructures.UploadFile object at 0x104431d60>}
+                 │         └ <function create_upload_file at 0x10427b1f0>
+                 └ <fastapi.dependencies.models.Dependant object at 0x104413f70>
+
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/routes/files.py", line 24, in create_upload_file
+    file_object.write(content)
+    │           │     └ b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00\xff\xdb\x00\x84\x00\t\x06\x07\x13\x12\x12\x10\x11\x12\...
+    │           └ <method 'write' of '_io.TextIOWrapper' objects>
+    └ <_io.TextIOWrapper name='/Users/jiheechoi/Desktop/FastAPI_SQL/planner/files/images_test.jpeg' mode='w' encoding='UTF-8'>
+
+TypeError: write() argument must be str, not bytes
+ERROR    2023-07-21 11:11:34.399 request id: app - uvicorn.protocols.http.h11_impl:run_asgi - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 29
+               └ <function _main at 0x100673ee0>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x100475790>
+           └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x100472dc0>
+    └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x100691670>, 'target': <bound method Server.run of <uvicorn.server.Server object...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+    │    └ <function subprocess_started at 0x101bfb700>
+    └ <SpawnProcess name='SpawnProcess-2' parent=71076 started>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=26, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x1006916a0>>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=26, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x101bf4c10>
+           │       │   └ <uvicorn.server.Server object at 0x1006916a0>
+           │       └ <function run at 0x1006a78b0>
+           └ <module 'asyncio' from '/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/pyth...
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x10421ebc0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x100c3e9d0>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x100c3e940>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x100c424c0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x100bda160>
+    └ <Handle <TaskStepMethWrapper object at 0x104431c10>()>
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x104431c10>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x104431c10>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x104431c10>()>
+> File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x101bda220>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x1043ebc10>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x101bda220>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/applications.py", line 282, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x104420cd0>
+          └ <fastapi.applications.FastAPI object at 0x1043ebc10>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x104411790>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x104420ca0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x104420cd0>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x104411820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x104420c40>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x104420ca0>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x104411820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x1043ebb50>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x104420c40>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x104411820>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x101a2fca0>
+          └ APIRoute(path='/file/image', name='create_upload_file', methods=['POST'])
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x104411820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x104431bb0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x1044115e0>
+          └ APIRoute(path='/file/image', name='create_upload_file', methods=['POST'])
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x104431310>
+                     └ <function get_request_handler.<locals>.app at 0x104411550>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/routing.py", line 241, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x101a17940>
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/myvenv/lib/python3.9/site-packages/fastapi/routing.py", line 167, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'file': <starlette.datastructures.UploadFile object at 0x104431d60>}
+                 │         └ <function create_upload_file at 0x10427b1f0>
+                 └ <fastapi.dependencies.models.Dependant object at 0x104413f70>
+
+  File "/Users/jiheechoi/Desktop/FastAPI_SQL/planner/routes/files.py", line 24, in create_upload_file
+    file_object.write(content)
+    │           │     └ b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00\xff\xdb\x00\x84\x00\t\x06\x07\x13\x12\x12\x10\x11\x12\...
+    │           └ <method 'write' of '_io.TextIOWrapper' objects>
+    └ <_io.TextIOWrapper name='/Users/jiheechoi/Desktop/FastAPI_SQL/planner/files/images_test.jpeg' mode='w' encoding='UTF-8'>
+
+TypeError: write() argument must be str, not bytes
+INFO     2023-07-21 11:12:06.797 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:12:06.797 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:12:06.898 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:12:06.899 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:12:06.899 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:12:06.899 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:12:06.900 request id: app - uvicorn.server:serve - Finished server process [71416]
+INFO     2023-07-21 11:12:06.900 request id: app - uvicorn.server:serve - Finished server process [71416]
+DEBUG    2023-07-21 11:12:07.446 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 11:12:07.466 request id: app - uvicorn.server:serve - Started server process [71477]
+INFO     2023-07-21 11:12:07.466 request id: app - uvicorn.server:serve - Started server process [71477]
+INFO     2023-07-21 11:12:07.466 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:12:07.466 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:12:07.467 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:12:07.467 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:23:09.746 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:23:09.747 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:23:09.849 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:23:09.850 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:23:09.850 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:23:09.850 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:23:09.851 request id: app - uvicorn.server:serve - Finished server process [71477]
+INFO     2023-07-21 11:23:09.851 request id: app - uvicorn.server:serve - Finished server process [71477]
+DEBUG    2023-07-21 11:23:10.300 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 11:23:10.319 request id: app - uvicorn.server:serve - Started server process [72253]
+INFO     2023-07-21 11:23:10.320 request id: app - uvicorn.server:serve - Started server process [72253]
+INFO     2023-07-21 11:23:10.320 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:23:10.320 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:23:10.320 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:23:10.320 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:23:19.018 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:23:19.019 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:23:19.121 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:23:19.122 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:23:19.123 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:23:19.123 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:23:19.124 request id: app - uvicorn.server:serve - Finished server process [72253]
+INFO     2023-07-21 11:23:19.124 request id: app - uvicorn.server:serve - Finished server process [72253]
+DEBUG    2023-07-21 11:23:21.130 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 11:23:21.147 request id: app - uvicorn.server:serve - Started server process [72316]
+INFO     2023-07-21 11:23:21.147 request id: app - uvicorn.server:serve - Started server process [72316]
+INFO     2023-07-21 11:23:21.148 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:23:21.148 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:23:21.148 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:23:21.148 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:23:30.446 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:23:30.446 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:23:30.547 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:23:30.548 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:23:30.548 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:23:30.548 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:23:30.548 request id: app - uvicorn.server:serve - Finished server process [72316]
+INFO     2023-07-21 11:23:30.549 request id: app - uvicorn.server:serve - Finished server process [72316]
+DEBUG    2023-07-21 11:23:46.644 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 11:23:46.663 request id: app - uvicorn.server:serve - Started server process [72361]
+INFO     2023-07-21 11:23:46.663 request id: app - uvicorn.server:serve - Started server process [72361]
+INFO     2023-07-21 11:23:46.663 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:23:46.663 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:23:46.663 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:23:46.664 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:24:03.847 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:24:03.848 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:24:03.949 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:24:03.950 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:24:03.951 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:24:03.951 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:24:03.951 request id: app - uvicorn.server:serve - Finished server process [72361]
+INFO     2023-07-21 11:24:03.951 request id: app - uvicorn.server:serve - Finished server process [72361]
+DEBUG    2023-07-21 11:24:04.359 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 11:24:04.376 request id: app - uvicorn.server:serve - Started server process [72388]
+INFO     2023-07-21 11:24:04.376 request id: app - uvicorn.server:serve - Started server process [72388]
+INFO     2023-07-21 11:24:04.376 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:24:04.376 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:24:04.377 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:24:04.377 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:24:07.915 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:24:07.915 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 11:24:08.017 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:24:08.017 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 11:24:08.018 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:24:08.018 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 11:24:08.018 request id: app - uvicorn.server:serve - Finished server process [72388]
+INFO     2023-07-21 11:24:08.018 request id: app - uvicorn.server:serve - Finished server process [72388]
+DEBUG    2023-07-21 11:34:07.511 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 11:34:07.531 request id: app - uvicorn.server:serve - Started server process [73278]
+INFO     2023-07-21 11:34:07.531 request id: app - uvicorn.server:serve - Started server process [73278]
+INFO     2023-07-21 11:34:07.531 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:34:07.532 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 11:34:07.532 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 11:34:07.532 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:02:07.087 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:02:07.091 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:02:07.192 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:02:07.193 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:02:07.193 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:02:07.194 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:02:07.194 request id: app - uvicorn.server:serve - Finished server process [73278]
+INFO     2023-07-21 12:02:07.194 request id: app - uvicorn.server:serve - Finished server process [73278]
+DEBUG    2023-07-21 12:02:07.794 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 12:02:07.808 request id: app - uvicorn.server:serve - Started server process [75349]
+INFO     2023-07-21 12:02:07.808 request id: app - uvicorn.server:serve - Started server process [75349]
+INFO     2023-07-21 12:02:07.808 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:02:07.808 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:02:07.809 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:02:07.809 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:02:09.425 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:02:09.426 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:02:09.527 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:02:09.528 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:02:09.528 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:02:09.529 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:02:09.529 request id: app - uvicorn.server:serve - Finished server process [75349]
+INFO     2023-07-21 12:02:09.529 request id: app - uvicorn.server:serve - Finished server process [75349]
+DEBUG    2023-07-21 12:02:11.416 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 12:02:11.430 request id: app - uvicorn.server:serve - Started server process [75400]
+INFO     2023-07-21 12:02:11.430 request id: app - uvicorn.server:serve - Started server process [75400]
+INFO     2023-07-21 12:02:11.430 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:02:11.430 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:02:11.431 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:02:11.431 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:02:33.467 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:02:33.468 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:02:33.569 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:02:33.569 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:02:33.570 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:02:33.570 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:02:33.570 request id: app - uvicorn.server:serve - Finished server process [75400]
+INFO     2023-07-21 12:02:33.570 request id: app - uvicorn.server:serve - Finished server process [75400]
+DEBUG    2023-07-21 12:02:34.044 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 12:02:34.063 request id: app - uvicorn.server:serve - Started server process [75434]
+INFO     2023-07-21 12:02:34.063 request id: app - uvicorn.server:serve - Started server process [75434]
+INFO     2023-07-21 12:02:34.064 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:02:34.064 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:02:34.064 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:02:34.064 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:02:45.893 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:02:45.895 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:02:45.996 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:02:45.997 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:02:45.998 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:02:45.999 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:02:45.999 request id: app - uvicorn.server:serve - Finished server process [75434]
+INFO     2023-07-21 12:02:45.999 request id: app - uvicorn.server:serve - Finished server process [75434]
+DEBUG    2023-07-21 12:02:47.634 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 12:02:47.646 request id: app - uvicorn.server:serve - Started server process [75501]
+INFO     2023-07-21 12:02:47.646 request id: app - uvicorn.server:serve - Started server process [75501]
+INFO     2023-07-21 12:02:47.646 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:02:47.646 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:02:47.646 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:02:47.647 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:03:51.019 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:03:51.019 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 12:03:51.121 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:03:51.121 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 12:03:51.122 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:03:51.122 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 12:03:51.122 request id: app - uvicorn.server:serve - Finished server process [75501]
+INFO     2023-07-21 12:03:51.122 request id: app - uvicorn.server:serve - Finished server process [75501]
+DEBUG    2023-07-21 12:03:51.518 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 12:03:51.532 request id: app - uvicorn.server:serve - Started server process [75585]
+INFO     2023-07-21 12:03:51.532 request id: app - uvicorn.server:serve - Started server process [75585]
+INFO     2023-07-21 12:03:51.532 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:03:51.532 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 12:03:51.533 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 12:03:51.533 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 13:57:22.073 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 13:57:22.077 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 13:57:22.179 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 13:57:22.179 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 13:57:22.179 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 13:57:22.179 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 13:57:22.180 request id: app - uvicorn.server:serve - Finished server process [75585]
+INFO     2023-07-21 13:57:22.180 request id: app - uvicorn.server:serve - Finished server process [75585]
+DEBUG    2023-07-21 13:57:22.722 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 13:57:22.739 request id: app - uvicorn.server:serve - Started server process [77758]
+INFO     2023-07-21 13:57:22.739 request id: app - uvicorn.server:serve - Started server process [77758]
+INFO     2023-07-21 13:57:22.739 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 13:57:22.739 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 13:57:22.740 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 13:57:22.740 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 13:57:39.623 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 13:57:39.623 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 13:57:39.725 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 13:57:39.726 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 13:57:39.727 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 13:57:39.727 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 13:57:39.728 request id: app - uvicorn.server:serve - Finished server process [77758]
+INFO     2023-07-21 13:57:39.728 request id: app - uvicorn.server:serve - Finished server process [77758]
+DEBUG    2023-07-21 13:58:52.049 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 13:58:52.073 request id: app - uvicorn.server:serve - Started server process [78000]
+INFO     2023-07-21 13:58:52.073 request id: app - uvicorn.server:serve - Started server process [78000]
+INFO     2023-07-21 13:58:52.074 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 13:58:52.074 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 13:58:52.074 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 13:58:52.074 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 14:00:43.470 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60550 - "POST /file/image HTTP/1.1" 200
+INFO     2023-07-21 14:01:11.950 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60556 - "POST /file/image HTTP/1.1" 200
+INFO     2023-07-21 14:01:13.807 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60557 - "POST /file/image HTTP/1.1" 200
+INFO     2023-07-21 14:01:32.841 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60561 - "POST /file/image HTTP/1.1" 200
+INFO     2023-07-21 14:01:48.109 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60564 - "POST /file/image HTTP/1.1" 400
+INFO     2023-07-21 14:03:39.252 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 14:03:39.252 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 14:03:39.355 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 14:03:39.355 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 14:03:39.356 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 14:03:39.356 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 14:03:39.356 request id: app - uvicorn.server:serve - Finished server process [78000]
+INFO     2023-07-21 14:03:39.357 request id: app - uvicorn.server:serve - Finished server process [78000]
+ERROR    2023-07-21 14:03:39.902 request id: app - __mp_main__:<module> - this is error
+DEBUG    2023-07-21 14:03:39.907 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+ERROR    2023-07-21 14:03:39.922 request id: app - main:<module> - this is error
+INFO     2023-07-21 14:03:39.925 request id: app - uvicorn.server:serve - Started server process [78358]
+INFO     2023-07-21 14:03:39.925 request id: app - uvicorn.server:serve - Started server process [78358]
+INFO     2023-07-21 14:03:39.926 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 14:03:39.926 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 14:03:39.926 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 14:03:39.926 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 14:04:14.488 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 14:04:14.488 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 14:04:14.590 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 14:04:14.590 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 14:04:14.591 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 14:04:14.591 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 14:04:14.591 request id: app - uvicorn.server:serve - Finished server process [78358]
+INFO     2023-07-21 14:04:14.591 request id: app - uvicorn.server:serve - Finished server process [78358]
+DEBUG    2023-07-21 14:04:15.039 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 14:04:15.064 request id: app - uvicorn.server:serve - Started server process [78418]
+INFO     2023-07-21 14:04:15.064 request id: app - uvicorn.server:serve - Started server process [78418]
+INFO     2023-07-21 14:04:15.064 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 14:04:15.064 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 14:04:15.064 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 14:04:15.065 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 14:04:17.087 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 14:04:17.087 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 14:04:17.189 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 14:04:17.189 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 14:04:17.189 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 14:04:17.189 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 14:04:17.189 request id: app - uvicorn.server:serve - Finished server process [78418]
+INFO     2023-07-21 14:04:17.189 request id: app - uvicorn.server:serve - Finished server process [78418]
