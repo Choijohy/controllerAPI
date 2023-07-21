@@ -1,0 +1,66 @@
+DEBUG    2023-07-21 09:49:40.310 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 09:49:40.335 request id: app - uvicorn.server:serve - Started server process [64081]
+INFO     2023-07-21 09:49:40.335 request id: app - uvicorn.server:serve - Started server process [64081]
+INFO     2023-07-21 09:49:40.335 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 09:49:40.335 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 09:49:40.336 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 09:49:40.336 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 09:49:44.783 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 09:49:44.783 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 09:49:44.884 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 09:49:44.885 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 09:49:44.885 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 09:49:44.886 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 09:49:44.886 request id: app - uvicorn.server:serve - Finished server process [64081]
+INFO     2023-07-21 09:49:44.886 request id: app - uvicorn.server:serve - Finished server process [64081]
+DEBUG    2023-07-21 09:49:47.669 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 09:49:47.687 request id: app - uvicorn.server:serve - Started server process [64140]
+INFO     2023-07-21 09:49:47.687 request id: app - uvicorn.server:serve - Started server process [64140]
+INFO     2023-07-21 09:49:47.687 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 09:49:47.687 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 09:49:47.688 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 09:49:47.688 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 09:49:51.631 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 09:49:51.632 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 09:49:51.733 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 09:49:51.734 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 09:49:51.734 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 09:49:51.735 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 09:49:51.735 request id: app - uvicorn.server:serve - Finished server process [64140]
+INFO     2023-07-21 09:49:51.735 request id: app - uvicorn.server:serve - Finished server process [64140]
+DEBUG    2023-07-21 09:52:47.004 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 09:52:47.029 request id: app - uvicorn.server:serve - Started server process [64461]
+INFO     2023-07-21 09:52:47.029 request id: app - uvicorn.server:serve - Started server process [64461]
+INFO     2023-07-21 09:52:47.029 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 09:52:47.030 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 09:52:47.030 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 09:52:47.031 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 09:53:00.099 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57344 - "GET /docs HTTP/1.1" 200
+INFO     2023-07-21 09:53:00.265 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57344 - "GET /openapi.json HTTP/1.1" 200
+DEBUG    2023-07-21 09:53:48.464 request id: app - passlib.handlers.bcrypt:_load_backend_mixin - detected 'bcrypt' backend, version '4.0.1'
+DEBUG    2023-07-21 09:53:48.465 request id: app - passlib.handlers.bcrypt:_finalize_backend_mixin - 'bcrypt' backend lacks $2$ support, enabling workaround
+INFO     2023-07-21 09:53:48.841 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57358 - "POST /user/signup HTTP/1.1" 200
+INFO     2023-07-21 09:54:17.952 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 09:54:17.953 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 09:54:18.054 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 09:54:18.054 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 09:54:18.055 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 09:54:18.055 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 09:54:18.055 request id: app - uvicorn.server:serve - Finished server process [64461]
+INFO     2023-07-21 09:54:18.055 request id: app - uvicorn.server:serve - Finished server process [64461]
+DEBUG    2023-07-21 09:55:32.780 request id: app - asyncio.selector_events:__init__ - Using selector: KqueueSelector
+INFO     2023-07-21 09:55:32.806 request id: app - uvicorn.server:serve - Started server process [64812]
+INFO     2023-07-21 09:55:32.806 request id: app - uvicorn.server:serve - Started server process [64812]
+INFO     2023-07-21 09:55:32.806 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 09:55:32.806 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-07-21 09:55:32.807 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 09:55:32.807 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-07-21 09:55:41.764 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57381 - "POST /user/signup HTTP/1.1" 422
+INFO     2023-07-21 09:56:13.843 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 09:56:13.845 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-07-21 09:56:13.947 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 09:56:13.948 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-07-21 09:56:13.949 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 09:56:13.950 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-07-21 09:56:13.950 request id: app - uvicorn.server:serve - Finished server process [64812]
+INFO     2023-07-21 09:56:13.950 request id: app - uvicorn.server:serve - Finished server process [64812]
