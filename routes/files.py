@@ -1,7 +1,7 @@
 # fastAPI의 UploadFile, FileResponse 객체 활용
 # DB아닌 저장경로를 통해, 파일 저장 및 불러오기
 
-from fastapi import APIRouter,  UploadFile, Query
+from fastapi import APIRouter,  UploadFile, Query, HTTPException, status
 from typing_extensions import Annotated
 from fastapi.responses import FileResponse
 from typing import Union
@@ -13,7 +13,10 @@ file_router = APIRouter()
 @file_router.post("/image")
 async def create_upload_file(file: Union[UploadFile,None]=None):
     if not file:
-        return {"message": "No upload file sent"}
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="No file to be uploaded"
+        )
     else:
         # 업로드 url 적절하게 수정
         UPLOAD_DIR = '/Users/jiheechoi/Desktop/FastAPI_SQL/planner/files'
@@ -21,7 +24,7 @@ async def create_upload_file(file: Union[UploadFile,None]=None):
         file_location = os.path.join(UPLOAD_DIR,file.filename)
         # w - 쓰기모드, b - 바이너리 모드(비트단위 데이터 기록) 
         # b 모드가 없으면 이미지 파일은 TypeError
-        with open(file_location, "w") as file_object:
+        with open(file_location, "wb") as file_object:
             file_object.write(content)
 
         return {
@@ -34,6 +37,9 @@ async def create_upload_file(file: Union[UploadFile,None]=None):
 @file_router.get("/image")
 async def download_file(path: Union[str, None] = Query(default=None)):
     if not path:
-        return {"message":"No file to be downloaded"}
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="No file to be downloaded"
+        )
     else:
         return FileResponse('/'+path)

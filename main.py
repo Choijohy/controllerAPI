@@ -11,7 +11,6 @@ from routes import corpus, types, users, files
 
 # logger 인스턴스 생성
 logger = logging.getLogger("main")
-
 config_path = Path(__file__).with_name("logging_config.json")
 
 def create_app() -> FastAPI:
@@ -22,6 +21,42 @@ def create_app() -> FastAPI:
     return app
 
 app = create_app()
+
+#logging for body data
+def log_info(req_body,res_body):
+    logging.info(req_body)
+    logging.info(res_body)
+
+async def set_body(request: Request, body:bytes):
+    async def receive() -> Message:
+        return {'type':'http.request','body':body}
+    request._receive = receive
+
+# logging middelware
+@app.middleware('http')
+async def body_logging(request: Request, call_next):
+    # request.body(): get body as bytes type
+    req_body = await request.body()
+    await set_body(request,req_body)
+    
+    response = await call_next(request)
+    
+    # initialize an empty binary obj
+    res_body = b''
+    # concatenate all the data chunks received 
+    async for chunk in response.body_iterator:
+        res_body += chunk
+
+    try:
+        res_body: str = res_body.decode('utf-8')
+        task = BackgroundTask(log_info,req_body,res_body)
+    except :
+        # `response_body` was not a json format. (i.e. img, ...)
+        task = BackgroundTask(log_info, req_body, res_body)
+ 
+    return Response(content=res_body, status_code = response.status_code,
+    headers=dict(response.headers),media_type=response.media_type, background=task)
+    
 
 #routers
 app.include_router(corpus.corpus_router, prefix='/corpus')

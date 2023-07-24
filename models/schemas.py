@@ -35,8 +35,7 @@ class CorpusCreate(CorpusBase):
 
 # corpus schema : read
 class Corpus(CorpusBase):
-    corpusId : str
-    type : str
+    corpusId : int
     class Config:
         orm_mode = True
 

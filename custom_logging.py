@@ -4,6 +4,7 @@ from pathlib import Path
 from loguru import logger
 import json
 
+# intercept standard logging messages toward custom Loguru sinks
 class  InterceptHandler(logging.Handler):
     loglevel_mapping={
         50: 'CRITICAL',
@@ -14,23 +15,27 @@ class  InterceptHandler(logging.Handler):
         0: 'NOTSET',
     }
     def emit(self, record):
+        # get corresponding Loguru level if it exists
         try:
             level = logger.level(record.levelname).name
         except AttributeError:
             level = self.loglevel_mapping[record.levelno]
-
+            
+        # find caller from where originated the logged message
         frame, depth = logging.currentframe(), 2
         while frame.f_code.co_filename == logging.__file__:
             frame = frame.f_back
             depth += 1
         log = logger.bind(request_id='app')
+
+        # set options
         log.opt(
             depth=depth,
             exception=record.exc_info
         ).log(level,record.getMessage())
 
-class CustomizeLogger:
 
+class CustomizeLogger:
     @classmethod
     # config 파일에 맞게, logger 생성
     def make_logger(cls, config_path:Path):
@@ -57,15 +62,14 @@ class CustomizeLogger:
         format:str
     ):
         logger.remove()
-        # console 출력
-        # logger.add(
-        #     sys.stdout,
-        #     enqueue=True,
-        #     backtrace=True,
-        #     level=level.upper(),
-        #     format=format
-        # )
-
+        #console 출력
+        logger.add(
+            sys.stdout,
+            enqueue=True,
+            backtrace=True,
+            level=level.upper(),
+            format=format
+        )
         # 일반 log - access.log 파일
         logger.add(
             str(filepath),

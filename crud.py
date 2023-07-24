@@ -79,6 +79,7 @@ def get_all_types(db:Session):
 def get_type(db:Session,typeId:int):
     stmt = "SELECT typeId, type FROM CorpusTypes WHERE typeId = :typeId"
     result = db.execute(text(stmt),{"typeId":typeId}).fetchall()
+    print('here?')
     return result
 
 # insert an type

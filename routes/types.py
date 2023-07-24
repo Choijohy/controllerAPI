@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException,status
 from models import models, schemas
 from typing import List 
 import crud
@@ -28,7 +28,7 @@ async def read_type(typeId:int,db:Session=Depends(get_db)):
         raise HTTPException(status_code = 404, detail="Item not found")
     return result
 
-@type_router.post("/new")
+@type_router.post("/new",status_code=status.HTTP_201_CREATED)
 async def insert_type(Type: schemas.TypeCreate, db : Session=Depends(get_db)):
     result = crud.insert_type(db,Type)
     return result
