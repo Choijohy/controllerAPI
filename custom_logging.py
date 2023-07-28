@@ -27,6 +27,7 @@ class  InterceptHandler(logging.Handler):
             frame = frame.f_back
             depth += 1
         log = logger.bind(request_id='app')
+        
 
         # set options
         log.opt(
@@ -62,6 +63,7 @@ class CustomizeLogger:
         format:str
     ):
         logger.remove()
+
         #console 출력
         logger.add(
             sys.stdout,
@@ -72,7 +74,7 @@ class CustomizeLogger:
         )
         # 일반 log - access.log 파일
         logger.add(
-            str(filepath),
+            str(filepath)+'access.log',
             rotation=rotation,
             retention=retention,
             enqueue=True,
@@ -82,7 +84,7 @@ class CustomizeLogger:
         )
         # error log - error.log 파일
         logger.add(
-            str('/Users/jiheechoi/Desktop/FastAPI_SQL/planner/log/error.log'),
+            str(filepath)+'error.log',
             rotation=rotation,
             retention=retention,
             enqueue=True,

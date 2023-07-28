@@ -24,8 +24,12 @@ app = create_app()
 
 #logging for body data
 def log_info(req_body,res_body):
-    logging.info(req_body)
-    logging.info(res_body)
+    # `Response_body` was bytes type
+    if isinstance(res_body,bytes):
+        res_body = "image bytes data"
+        
+    logging.info("Req"+req_body)
+    logging.info("Res"+res_body)
 
 async def set_body(request: Request, body:bytes):
     async def receive() -> Message:
@@ -41,14 +45,22 @@ async def body_logging(request: Request, call_next):
     
     response = await call_next(request)
     
-    # initialize an empty binary obj
+    # initialize an empty binary obj(bytes)
     res_body = b''
     # concatenate all the data chunks received 
     async for chunk in response.body_iterator:
         res_body += chunk
 
+    # req_body가 multipart/form-data
+    if 'content-type' in request.headers:
+        if request.headers['content-type'].startswith('multipart'):
+            req_body = 'image bytes data'
+        else:
+            req_body = req_body.decode('utf-8')
+
     try:
-        res_body: str = res_body.decode('utf-8')
+        # `response_body` was a json format. convert bytes to string
+        res_body = res_body.decode('utf-8')
         task = BackgroundTask(log_info,req_body,res_body)
     except :
         # `response_body` was not a json format. (i.e. img, ...)
@@ -56,7 +68,6 @@ async def body_logging(request: Request, call_next):
  
     return Response(content=res_body, status_code = response.status_code,
     headers=dict(response.headers),media_type=response.media_type, background=task)
-    
 
 #routers
 app.include_router(corpus.corpus_router, prefix='/corpus')

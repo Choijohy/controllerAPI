@@ -16,7 +16,7 @@ def get_db():
         db.close()
 
 # insert item
-@corpus_router.post("/new")
+@corpus_router.post("/")
 async def insert_item(Corpus: schemas.CorpusCreate, db : Session=Depends(get_db)):
     result = crud.insert_item(db,Corpus)
     return result
@@ -36,14 +36,14 @@ async def read_item(id:int, db: Session = Depends(get_db)):
     return item
 
 # update item 
-@corpus_router.put("/{id}",response_model = List[schemas.Corpus])
+@corpus_router.put("/one/{id}",response_model = List[schemas.Corpus])
 async def update_item(id:int, CorpusUpate: schemas.CorpusUpdate, db: Session = Depends(get_db)):
     updated_item = crud.update_item(db,id,CorpusUpate)
     
     return updated_item
 
 # delete item
-@corpus_router.delete("/{corpusId}")
+@corpus_router.delete("/one/{corpusId}")
 async def del_item(corpusId:int, db:Session = Depends(get_db)):
     if len(crud.get_item(db,corpusId) == 0):
         raise HTTPException(status_code = 404, detail="Item not found")

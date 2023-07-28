@@ -4,7 +4,6 @@ from typing import List
 import crud
 from sqlalchemy.orm import Session
 from database.connection import SessionLocal
-from auth.authenticate import authenticate
 
 type_router = APIRouter()
 
@@ -28,7 +27,7 @@ async def read_type(typeId:int,db:Session=Depends(get_db)):
         raise HTTPException(status_code = 404, detail="Item not found")
     return result
 
-@type_router.post("/new",status_code=status.HTTP_201_CREATED)
+@type_router.post("/",status_code=status.HTTP_201_CREATED)
 async def insert_type(Type: schemas.TypeCreate, db : Session=Depends(get_db)):
     result = crud.insert_type(db,Type)
     return result
@@ -51,7 +50,7 @@ async def del_type(typeId:int, TypeUpdate: schemas.TypeUpdate, db: Session = Dep
         deleted_type = crud.del_type(db,typeId)
         return deleted_type
     
-@type_router.get("/items/{typeId}",response_model = List[schemas.Corpus])
+@type_router.get("/typeItems/{typeId}",response_model = List[schemas.Corpus])
 async def get_type_items(typeId:int, db:Session = Depends(get_db)):
     if len(crud.get_type(db,typeId)) == 0:
         raise HTTPException(status_code = 404, detail ="Type not found")
