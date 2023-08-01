@@ -27,9 +27,8 @@ def log_info(req_body,res_body):
     # `Response_body` was bytes type
     if isinstance(res_body,bytes):
         res_body = "image bytes data"
-        
-    logging.info("Req"+req_body)
-    logging.info("Res"+res_body)
+    logging.info("Req_body: "+req_body+"\n\nRes_body: "+res_body)
+
 
 async def set_body(request: Request, body:bytes):
     async def receive() -> Message:
@@ -55,9 +54,10 @@ async def body_logging(request: Request, call_next):
     if 'content-type' in request.headers:
         if request.headers['content-type'].startswith('multipart'):
             req_body = 'image bytes data'
-        else:
+    
+    if isinstance(req_body,bytes):
             req_body = req_body.decode('utf-8')
-
+ 
     try:
         # `response_body` was a json format. convert bytes to string
         res_body = res_body.decode('utf-8')

@@ -4,7 +4,7 @@
         "level":"info",
         "rotation":"3 days", 
         "retention":"10 days",
-        "format" : "<level>{level: <8}</level> <green> {message} </green>\n {time:YYYY-MM-DD HH:mm:ss} request id: {extra[request_id]} - {name}: <cyan>{function}</cyan>   "
+        "format" : "<level>{level: <8}</level> {time:YYYY-MM-DD HH:mm:ss} request id: {extra[request_id]} - {name} \n<green>{message}</green> "
     }
   }
   

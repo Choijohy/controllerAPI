@@ -20,6 +20,14 @@ async def create_upload_file(file: Union[UploadFile,None]=None):
     else:
         # 업로드 url 적절하게 수정
         UPLOAD_DIR = '/Users/jiheechoi/Desktop/FastAPI_SQL/planner/files'
+        if not os.path.exists(UPLOAD_DIR):
+            try:
+                os.makedirs(UPLOAD_DIR)
+            except:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="No directory for upload"
+                )
         content = await file.read()
         file_location = os.path.join(UPLOAD_DIR,file.filename)
         # w - 쓰기모드, b - 바이너리 모드(비트단위 데이터 기록) 
